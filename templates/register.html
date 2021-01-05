@@ -2,7 +2,6 @@
 
 {% block title %}
     <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
 {% endblock title %}
 
 {% block content %}
@@ -10,7 +9,7 @@
         <div style="margin-top: auto;">
             <form method="POST" action="">
                 {{ form.hidden_tag() }}
-                <fieldset style="text-align: center; width: 50%; height: 630px; font-size: 1.25rem; color: white;
+                <fieldset style="text-align: center; width: 50%; height: 570px; font-size: 1.25rem; color: white;
                 font-family: 'Josefin Sans', sans-serif; border: 2px solid white; margin: 0 auto; border-radius: 50px; background: radial-gradient(#00b0ff, #0070ff)">
                     <legend>Register today to guarantee improved grades!</legend>
                     <div style="height: 25px;"></div>

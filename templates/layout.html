@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="width: 100%; height: 100%;">
     <head>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -23,8 +23,10 @@
                         <li><a href="{{ url_for('home') }}">Calander</a></li>
                     {% if current_user.is_authenticated %}
                     </ul>
-                        <a href="{{ url_for('account') }}">{{ current_user.username }}</a>
-                        <a id="register" href="{{ url_for('logout') }}">Logout</a>
+                        <!-- <div> -->
+                            <a href="{{ url_for('account') }}" style="justify-self: end;">{{ current_user.username }}</a>
+                            <a id="register" href="{{ url_for('logout') }}">Logout</a>
+                        <!-- </div> -->
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Login</a></li>
                     </ul>
