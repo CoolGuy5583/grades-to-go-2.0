@@ -23,7 +23,7 @@
                         <li><a href="{{ url_for('home') }}">Calander</a></li>
                     {% if current_user.is_authenticated %}
                     </ul>
-                        <p>{{ current_user.username }}</p>
+                        <a href="{{ url_for('account') }}">{{ current_user.username }}</a>
                         <a id="register" href="{{ url_for('logout') }}">Logout</a>
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Login</a></li>

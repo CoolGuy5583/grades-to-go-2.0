@@ -54,19 +54,6 @@
                         {% endif %}
                     </div>
                     <div class="text-field-container">
-                        {{ form.gender.label(class="text-field-lable") }}
-                        {% if form.gender.errors %}
-                            {{ form.gender(class="text-field", onchange="submitCursor()") }}
-                            <div>
-                                {% for error in form.gender.errors %}
-                                    <span class="error">{{ error }}</span>                                
-                                {% endfor %}
-                            </div>
-                        {% else %}
-                            {{ form.gender(class="radio", onchange="submitCursor()") }}
-                        {% endif %}
-                    </div>
-                    <div class="text-field-container">
                         {{ form.username.label(class="text-field-lable") }}
                         {% if form.username.errors %}
                             {{ form.username(class="text-field", onchange="submitCursor()") }}

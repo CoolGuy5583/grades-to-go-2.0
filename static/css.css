@@ -42,7 +42,7 @@ header ul li{
 header ul li::before {
     transition: 200ms;
     height: 3px;
-    content: "poop";
+    content: "";
     position: absolute;
     background-color: white;
 }
